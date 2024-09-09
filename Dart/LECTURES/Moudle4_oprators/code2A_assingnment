@@ -1,8 +1,0 @@
-void main(){
-
-    int x =20;
-    int y= 12;
-
-    x+= y;
-    print(x);
-}
