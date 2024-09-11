@@ -1,16 +1,16 @@
-class Demo{
-  static int x = 10;
+// class Demo{
+//   static int x = 10;
 
-  int get getX => 20;
-  set setX(int x) => this.x= x;
-}
-void main(){
-  print(Demo.x);
+//   int get getX => 20;
+//   set setX(int x) => this.x= x;
+// }
+// void main(){
+//   print(Demo.x);
 
-  Demo obj = Demo();
-  print(obj.getX);
+//   Demo obj = Demo();
+//   print(obj.getX);
 
-  obj.setX = 50;
+//   obj.setX = 50;
 
-  print(obj.getX);
-}
+//   print(obj.getX);
+// }

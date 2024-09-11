@@ -3,8 +3,11 @@ void main(){
   int end = 50;
   while(start<=end){
     if(start%2==0){
-      print(start*start);
+      print(start*start*start);
       
+    }
+    else{
+        print(start*start);
     }
    start++;
   }
