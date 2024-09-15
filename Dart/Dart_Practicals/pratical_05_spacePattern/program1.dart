@@ -4,8 +4,11 @@ void main(){
   int n = int.parse(stdin.readLineSync()!);
   int num = 1;
   for(int i  =1; i<=n; i++){
+    for(int sp=1; sp<=n-i; sp++){
+      stdout.write(" _ ");
+    }
     for(int j=1; j<=i; j++){
-      stdout.write(" ${num*n} ");
+      stdout.write(" $num ");
       num++;
     }
    print("");
