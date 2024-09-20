@@ -3,8 +3,8 @@ class MacDIndia{
   double fries =  90.0;
 
   void food(){
-    print("Burger , Price: $burger");
-    print("fires ,Price : $fries");
+    print("Burger Price: $burger");
+    print("fires Price : $fries");
   }
 }
 

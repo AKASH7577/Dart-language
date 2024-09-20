@@ -33,7 +33,7 @@
 //    return num1+num2;
 // }
 
-// Error: int can not conert int double
+// Error: int can not convert int double
 
  //THIRD
 

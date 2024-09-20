@@ -7,5 +7,5 @@ void main(){
 class Demo {
   int x = 10;
   int _y = 20;
-  int get getY => _y;
+  int get getY => _y;//reduced line
 }

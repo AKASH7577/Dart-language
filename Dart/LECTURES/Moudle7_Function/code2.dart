@@ -1,8 +1,3 @@
-void main(){
-  print("start code");
-  fun();
-  print("End  code");
-}
 void fun(){
   print("start fun");
   run();
@@ -13,3 +8,9 @@ void fun(){
   print("start run");
   print("end run");
  }
+
+void main(){
+  print("start code");
+  fun();
+  print("End  code");
+}

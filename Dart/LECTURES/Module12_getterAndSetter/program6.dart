@@ -1,12 +1,7 @@
-// //setter and Getter
-// //program1
-// class Demo{
-//   int x =10;
-//   int _y = 20;
+//setter and Getter
 
-// }
-// //program2 
-// import "program6.dart";
+//program2 
+// import "program5.dart";
 // void main(){
 //   Demo obj = Demo();
 //   print(obj.x);

@@ -4,9 +4,9 @@ void main(){
   String str = "akash";
   bool flag = true;
 
-  print(x.runtimeType);
-  print(y.runtimeType);
-  print(str.runtimeType);
-  print(flag.runtimeType);
+  print(x.runtimeType);   // int 
+  print(y.runtimeType);   //double
+  print(str.runtimeType); // String
+  print(flag.runtimeType); //bool
 
 }

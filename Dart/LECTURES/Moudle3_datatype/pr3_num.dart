@@ -4,8 +4,9 @@ void main(){
   num y =12.98;
   //num str = "akash"; error 
   //num flag = true; //error only for int double
-
+  print(x);
   print(x.runtimeType);
+  print(y);
   print(y.runtimeType);
   // print(str.runtimeType);
   // print(flag.runtimeType);
@@ -14,7 +15,9 @@ void main(){
   x =26.84; //convert into int or double
   y =36;    //conver into int or double
   print(x);
+  print(x.runtimeType);
   print(y);
+  print(y.runtimeType);
 
 
 

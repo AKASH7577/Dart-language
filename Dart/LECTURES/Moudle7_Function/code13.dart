@@ -21,7 +21,7 @@ void main(){
 void empInfo(int empId, String  company, String empName,  { double? salary,  String? role }){
     print("Employee  Id: $empId");
     print("Employee  company: $company");
-    print("Employee  Id: $salary");
-    print("Employee  Id: $empName");
-     print("Employee  Id: $role");
+    print("Employee  salary: $salary");
+    print("Employee  EmpName: $empName");
+     print("Employee  Role: $role");
 }

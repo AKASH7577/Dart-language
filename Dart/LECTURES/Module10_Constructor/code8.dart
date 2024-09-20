@@ -4,10 +4,19 @@ class Company{
 
   // print("Invisible constructor");// not createing the method
  Company(){
-  print("dafault or no paramitrized constructor ");
+  print("in constructor ");
+ }
+ void cmpInfo(){
+  print("in cmpInfo");
  }
 
 }
 void main(){
+  //call atomatically-->constructor
   Company obj = Company();
+
+  //need to call it -->function
+  obj.cmpInfo();
+
+
 }

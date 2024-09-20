@@ -53,4 +53,9 @@ void main(){
    var ret = obj.retFun();
    ret();
 }
+   //
+   /*retFun() returns a reference to the static method fun.
+You then call the returned reference (ret()) and it works correctly because fun() is still a static method,
+ even though it is returned dynamically.
+*/
 

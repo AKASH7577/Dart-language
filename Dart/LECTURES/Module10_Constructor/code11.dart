@@ -4,9 +4,11 @@ class Company{
 
 
  Company(int empCount, String cmpName){
-  print("dafault or no paramitrized constructor ");
-  print(this.empCount);
-  print(this.cmpName);
+  print("paramitrized constructor ");
+ 
+
+  print(empCount);
+  print(cmpName);
  }
 
 }

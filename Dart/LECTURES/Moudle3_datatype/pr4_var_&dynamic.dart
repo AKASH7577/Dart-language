@@ -1,17 +1,17 @@
 void main(){
 
 ///var
-print("for var");
-  var x =16;
-  var y =12.98;
-  var str = "akash"; 
-  var flag1 = true; 
+print(" var darta type");
+  var x =16;            //int
+  var y =12.98;         //double
+  var str = "akash";    //String
+  var flag1 = true;     //flag
 
 print("type");
-  print(x.runtimeType);
-  print(y.runtimeType);
-  print(str.runtimeType);
-  print(flag1.runtimeType);
+print(x.runtimeType);
+print(y.runtimeType);
+print(str.runtimeType);
+print(flag1.runtimeType);
 
   print(x);
   print(y);
