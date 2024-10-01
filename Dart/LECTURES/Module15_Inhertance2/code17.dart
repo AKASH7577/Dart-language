@@ -1,7 +1,5 @@
-
 class Parent{
   int empId =10;
-
     Parent(){
       print("parent construtor");
       print(this.empId);
@@ -14,9 +12,8 @@ class child extends Parent{
        print("child construtor ");
        print(super.empId);
        print(empId);
-  
+       print(this.empId);
       }
-
 }
 void main(){
   child obj = child();

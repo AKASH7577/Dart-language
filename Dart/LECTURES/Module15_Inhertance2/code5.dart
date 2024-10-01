@@ -3,28 +3,22 @@
 // class Parent{
 //   int x=10;
 //   int y=20;
-
-//   Parent(){
+//   Parent():super(){
 //     print("Parent Constructor");
 //     print(x);
 //     print(y);
 //   }
-
 // }
 // class child extends Parent{
-//   child(){
+//   //super is by default after  child constructor 
+//   child():super(){
 //     print("child constructor");
 //     print(x);
 //     print(y);
 //   }
-
 // }
-
 // void main(){
-
 //   child cobj = child();
-
-  
 // }
 
 
@@ -42,6 +36,7 @@ class Parent{
 
 }
 class child extends Parent{
+
   child(){
     print("child constructor");
     print(x);

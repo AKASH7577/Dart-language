@@ -42,16 +42,16 @@ class Demo{
     print(x);
   }
   int get getX => x;
-  dynamic  retFun(){
-    return fun;
-  }
+  dynamic  retFun()=> fun;
+
 }
 
 void main(){
   Demo obj = Demo();
   print(obj.getX);
-   var ret = obj.retFun();
-   ret();
+  var ret = obj.retFun();
+  ret();
+   
 }
    //
    /*retFun() returns a reference to the static method fun.

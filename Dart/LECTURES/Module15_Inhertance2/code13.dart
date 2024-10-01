@@ -1,8 +1,6 @@
-
 class Parent{
   int? x;
   int? y;
-
     Parent({this.x,this.y}){
       print("parent construtor");
       print(x);
@@ -14,9 +12,7 @@ class child extends Parent{
        print("child construtor ");
        print(x);
        print(y);
-  
       }
-
 }
 void main(){
   child obj = child(70,30);
