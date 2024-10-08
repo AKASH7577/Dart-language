@@ -1,4 +1,6 @@
 
+import "dart:math";
+
 import "package:flutter/material.dart";
 void main(){
   runApp( const MyApp());
@@ -58,6 +60,7 @@ int  score = 0;
  WidgetStateProperty<Color?> checkAnswer(int answerIndex){
   if(selectedAnswerIndex != -1){
     if(answerIndex== allQuestion[currentQuestionIndex]["correctAnswer"]){
+      score +=1;
       return const WidgetStatePropertyAll(Colors.green);
       
     }
@@ -292,6 +295,25 @@ int  score = 0;
               fontWeight: FontWeight.w600,
             ),
             ),
+            SizedBox(height: 30,),
+          ElevatedButton(onPressed: (
+
+      
+            
+          
+
+
+          ){},
+          style:   ButtonStyle(
+                        backgroundColor:WidgetStatePropertyAll(Colors.blue),
+                      ),
+          child:Text("Retest",
+          style: TextStyle(fontSize: 30,
+          fontWeight: FontWeight.bold,
+          color: Colors.white,),)
+          
+          
+          )
           ],
         ),
       ),
