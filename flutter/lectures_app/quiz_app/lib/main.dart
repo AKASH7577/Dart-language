@@ -60,7 +60,6 @@ int  score = 0;
  WidgetStateProperty<Color?> checkAnswer(int answerIndex){
   if(selectedAnswerIndex != -1){
     if(answerIndex== allQuestion[currentQuestionIndex]["correctAnswer"]){
-      score +=1;
       return const WidgetStatePropertyAll(Colors.green);
       
     }
@@ -140,6 +139,9 @@ int  score = 0;
                 ),
                 onPressed: (){
                   if(selectedAnswerIndex == -1){
+                  if (selectedAnswerIndex == allQuestion[currentQuestionIndex]["correctAnswer"]) {
+                      score++;
+                    }
                     selectedAnswerIndex = 0;
                     setState(() {});
                   }
@@ -167,6 +169,9 @@ int  score = 0;
                 onPressed: (){
                   if(selectedAnswerIndex == -1){
                     selectedAnswerIndex = 1;
+                    if (selectedAnswerIndex == allQuestion[currentQuestionIndex]["correctAnswer"]) {
+                      score++;
+                    }
                     setState(() {});
                   }
                 },
@@ -193,6 +198,9 @@ int  score = 0;
                 onPressed: (){
                   if(selectedAnswerIndex == -1){
                     selectedAnswerIndex = 2;
+                   if (selectedAnswerIndex == allQuestion[currentQuestionIndex]["correctAnswer"]) {
+                      score++;
+                    }
                     setState(() {});
                   }
                 },
@@ -219,6 +227,11 @@ int  score = 0;
                 onPressed: (){
                   if(selectedAnswerIndex == -1){
                     selectedAnswerIndex = 3;
+                   if (selectedAnswerIndex == allQuestion[currentQuestionIndex]["correctAnswer"]) {
+                      if (selectedAnswerIndex == allQuestion[currentQuestionIndex]["correctAnswer"]) {
+                      score++;
+                    }
+                    }
                     setState(() {});
                   }
                 },
@@ -258,7 +271,7 @@ int  score = 0;
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Quiz Result",
+          "Quiz  End",
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.w900,
@@ -278,7 +291,7 @@ int  score = 0;
             height: 300,
 
             ),
-             const SizedBox(height: 30),
+             SizedBox(height: 30),
             const  Text(
               "Congratulations",
               style: TextStyle(
@@ -290,25 +303,26 @@ int  score = 0;
             ),
             const SizedBox(height: 30),
             Text("You Scored : $score/${allQuestion.length}",
-            style: TextStyle(
+            style:  const TextStyle(
               fontSize :20,
               fontWeight: FontWeight.w600,
             ),
             ),
-            SizedBox(height: 30,),
-          ElevatedButton(onPressed: (
-
-      
-            
-          
-
-
-          ){},
-          style:   ButtonStyle(
+             const SizedBox(height: 30,),
+          ElevatedButton(onPressed: () {
+    // Retest quiz
+            setState(() {
+            currentQuestionIndex = 0;
+            selectedAnswerIndex = -1;
+            score = 0;
+            questionPage = true;
+            });
+            },
+          style:   const  ButtonStyle(
                         backgroundColor:WidgetStatePropertyAll(Colors.blue),
                       ),
-          child:Text("Retest",
-          style: TextStyle(fontSize: 30,
+          child: const Text("Retest",
+          style:   TextStyle(fontSize: 30,
           fontWeight: FontWeight.bold,
           color: Colors.white,),)
           
